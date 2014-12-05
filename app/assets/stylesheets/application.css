@@ -19,21 +19,29 @@
     float: left;
     padding: 10px;
 }
-body { padding-top: 100px; }
+
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 td.picture { width: 140px; }
 td.picture img { width: 140px; }
 
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
 .menu {
     position: fixed;
     top: 0;
-    height: 2000px;
-    width: 100px;
+    height: 100%;
+    width: 150px;
     background-color: #333;
 }
-
+.menu a:hover{
+    color: black;
+}
 .menu ul li {
     width: 100%;
 
@@ -41,12 +49,87 @@ td.picture img { width: 140px; }
 .menu ul li a{
     color: #fff;
 }
-.container {
-    padding-left: 120px !important;
-}
-.footer {
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.header1 {
     position: fixed;
-    bottom: 0;
-    background-color: black;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    background: #d6d6d6;
+    z-index: 10000;
+    height: 230px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
 }
+.header1 .header2 {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding: 0 1.875em;
+  margin: 0;
+}
+.header1 h1,
+.header1 nav {
+  display: inline-block;
+  position: relative;
+}
+.header1 h1,
+.header1 nav a {
+    line-height: 225px;
+}
+.header1 h1 {
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 4px;
+  font-size: 3em;
+  margin: 0;
+  float: left;
+  border: 2px solid red;
+}
+.header1 nav {
+  float: right;
+  border: 2px solid blue;
+}
+.header1 nav a {
+  color: #aaa;
+  font-weight: 700;
+  margin: 0 0 0 20px;
+  font-size: 1.4em;
+}
+.header1 nav a:hover {
+  color: #333;
+}
+ 
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+.container {
+  margin-left: 150px !important;
+  margin-top: 230px;
+  width: inherit;
+  border: solid red 2px;                      /* A SUPPRIMER */
+  height: 2000px ;                             /* A SUPPRIMER */
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+footer {
+  margin-left: 150px;
+  bottom: 0;
+/*  background-color: black;                  /* A SUPPRIMER */
+  height: 40px;
+  text-align: center;
+  margin-top: 0;
+/*  border-style: solid;                      /* A SUPPRIMER */
+/*  border-width: 2px;                        /* A SUPPRIMER */
+/*  border-color: red;                        /* A SUPPRIMER */
+}
+footer h1{
+  color: black;
+  font-size: 0.875em;
+  display: inline-block;
 
